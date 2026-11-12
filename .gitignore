@@ -1,1 +1,4 @@
 .DS_Store
+
+# Full-size screen recordings the website videos are made from (about 150 MB); not published.
+/source-videos/

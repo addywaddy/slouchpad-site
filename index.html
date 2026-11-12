@@ -21,7 +21,7 @@
 </head>
 <body>
 <div class="pad">
-<header class="site-header inner"><nav aria-label="Main"><a href="#home">Home</a><a href="#features">Features</a><a href="#setup">Setup</a><a href="#support">Support</a><a href="#privacy">Privacy</a></nav></header>
+<header class="site-header inner"><nav aria-label="Main"><a href="#home">Home</a><a href="#features">Features</a><a href="#settings">Settings</a><a href="#setup">Setup</a><a href="#support">Support</a><a href="#privacy">Privacy</a></nav></header>
 <main>
 <div class="inner hero" id="home">
   <div class="hero-brand">
@@ -49,16 +49,16 @@
         <li>Volume and brightness controls, with output selection</li>
         <li>Fullscreen mode</li>
       </ul></div>
-    <div class="feature-shot"><img src="/assets/screens/features/remote.png" width="700" height="1515" loading="lazy" alt="The Slouchpad remote: skip back and forward ten seconds, a large play and pause button, volume and brightness sliders with their device pickers, and a fullscreen switch."></div>
+    <div class="feature-shot"><video src="/assets/screens/features/remote.mp4" poster="/assets/screens/features/remote-poster.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="The Slouchpad remote in use: tapping back, play and pause, and forward, above the volume and brightness sliders and the fullscreen switch."></video></div>
   </div>
   <div class="feature">
     <div class="feature-text"><h3 class="etched sub">Trackpad</h3><p>A plain glass trackpad for your Mac.</p>
       <ul>
         <li>Move, click, scroll and drag</li>
-        <li>Brightness, with output selection</li>
+        <li>Tap with three fingers to go back to the remote</li>
         <li>Pointer speed and visual trail controls (optional)</li>
       </ul></div>
-    <div class="feature-shot"><img src="/assets/screens/features/trackpad.png" width="700" height="1515" loading="lazy" alt="The Slouchpad trackpad: a blank glass pad with a faint blue trail and a ring marking the pointer."></div>
+    <div class="feature-shot"><video src="/assets/screens/features/trackpad.mp4" poster="/assets/screens/features/trackpad.png" width="592" height="1280" autoplay muted loop playsinline preload="metadata" aria-label="Drawing on the blank glass trackpad: a purple trail follows the finger and fades away, leaving a faint ring where the pointer is."></video></div>
   </div>
   <div class="feature">
     <div class="feature-text"><h3 class="etched sub">Keyboard</h3><p>Type with your iPhone's keyboard and the text appears on your Mac, in whichever app is in front.</p>
@@ -67,36 +67,53 @@
         <li>Large preview of entered text on the Mac (optional)</li>
         <li>Native audio transcription</li>
       </ul></div>
-    <div class="feature-shot"><img src="/assets/screens/features/keyboard.png" width="700" height="1515" loading="lazy" alt="The Slouchpad typing screen: a glass pad reading Type here, above the iPhone keyboard."></div>
+    <div class="feature-shot"><video src="/assets/screens/features/keyboard.mp4" poster="/assets/screens/features/keyboard-poster.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="The Slouchpad typing screen: typing Netflix fills the text field, and the arrow keys above the keyboard move the cursor."></video></div>
   </div>
-  <div class="feature wide">
+  <div class="feature">
     <div class="feature-text"><h3 class="etched sub">Apps</h3><p>Your Mac's Dock, on your phone. Switch apps without reaching for the Mac.</p>
       <ul>
         <li>Apps appear in the Dock's own order, with closed ones dimmed</li>
         <li>Tap to bring an app to the front, or to open it; tap the front app again to step through its windows</li>
         <li>Hold an app to quit it, or to send its window to another screen</li>
       </ul></div>
-    <div class="feature-shot pair">
-      <img src="/assets/screens/features/dock/dock-select.png" width="700" height="1515" loading="lazy" alt="The Apps screen: a grid of the Mac's Dock apps, with Safari selected and the closed apps dimmed.">
-      <img src="/assets/screens/features/dock/dock-press-and-hold.png" width="700" height="1515" loading="lazy" alt="Holding Safari on the Apps screen opens a menu: send it to the built-in display, send it to another display, or quit it.">
-    </div>
+    <div class="feature-shot"><video src="/assets/screens/features/dock/dock.mp4" poster="/assets/screens/features/dock/dock-select.png" width="592" height="1280" autoplay muted loop playsinline preload="metadata" aria-label="Choosing an app on the Apps screen, then holding Safari to send it to another display or quit it."></video></div>
+  </div>
+</div>
+</section>
+<hr class="rule">
+<section class="inner page guide" id="settings">
+  <h2 class="etched title">Settings</h2>
+  <p class="lead" style="margin-left:0">Everything is in three tabs: Connection, Controls and Appearance.</p>
+<div class="features">
+  <div class="feature">
+    <div class="feature-text"><h3 class="etched sub">Connection</h3><p>Which Mac to control, and the PIN that lets your iPhone in.</p>
+      <ul>
+        <li><strong>Automatic:</strong> your iPhone finds your Mac on the same Wi-Fi network; choose it from the list</li>
+        <li><strong>Manual:</strong> for networks where devices can't find each other, type the address shown in the Slouchpad menu on your Mac</li>
+        <li>Enter the PIN from the Slouchpad menu, then Connect. Step by step, see the <a href="#setup">setup guide</a></li>
+      </ul></div>
+    <div class="feature-shot"><img src="/assets/screens/connection/connection-automatic.png" width="700" height="1515" loading="lazy" alt="The Connection tab on Automatic: your Mac is listed and the PIN is entered, ready to connect."></div>
   </div>
   <div class="feature">
-    <div class="feature-text"><h3 class="etched sub">Magnifier</h3><p>Zoom in around the pointer on your Mac while you use the trackpad or the keyboard.</p>
+    <div class="feature-text"><h3 class="etched sub">Controls</h3><p>How the pointer and the Mac respond.</p>
       <ul>
-        <li>One switch in Controls, off until you want it</li>
-        <li>Needs &ldquo;Use keyboard shortcuts to zoom&rdquo; switched on in System Settings, Accessibility, Zoom on your Mac</li>
+        <li><strong>Pointer speed</strong> and <strong>pointer colour</strong></li>
+        <li><strong>Pointer trail on Mac:</strong> a fading trail follows the pointer, so it's easy to find from the couch</li>
+        <li><strong>Magnifier on Mac:</strong> zooms in around the pointer while the trackpad or the typing screen is showing. It needs &ldquo;Use keyboard shortcuts to zoom&rdquo; switched on in System Settings, Accessibility, Zoom on your Mac</li>
+        <li><strong>Typing preview on Mac:</strong> shows what you type in large letters on the Mac</li>
+        <li><strong>Share crash reports:</strong> off until you switch it on. It sends an anonymous report if Slouchpad crashes, and nothing else</li>
       </ul>
       <img class="inline-shot" src="/assets/screens/controls/controls-zoom-settings.png" width="800" height="125" loading="lazy" alt="The Mac's Zoom settings with Use keyboard shortcuts to zoom switched on."></div>
-    <div class="feature-shot"><img src="/assets/screens/controls/controls.png" width="700" height="1515" loading="lazy" alt="Slouchpad's Controls settings: pointer speed, pointer trail, pointer colour, Magnifier on Mac, typing preview on Mac and Share crash reports."></div>
+    <div class="feature-shot"><video src="/assets/screens/controls/controls.mp4" poster="/assets/screens/controls/controls.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="The Controls tab: the pointer trail switch is turned off and on, and the pointer colour slider moves along the rainbow. Below are Magnifier on Mac, typing preview on Mac and Share crash reports."></video></div>
   </div>
   <div class="feature">
-    <div class="feature-text"><h3 class="etched sub">Dark mode</h3><p>Easy on the eyes when the lights are down.</p>
+    <div class="feature-text"><h3 class="etched sub">Appearance</h3><p>Easy on the eyes when the lights are down.</p>
       <ul>
-        <li>Black background with a colour you choose</li>
-        <li>Dim the app below your iPhone's own minimum brightness</li>
+        <li><strong>Dark mode:</strong> a black background with a colour you choose</li>
+        <li><strong>Brightness:</strong> dim the app below your iPhone's own minimum brightness</li>
+        <li><strong>Colour:</strong> pick the accent from the rainbow slider</li>
       </ul></div>
-    <div class="feature-shot"><img src="/assets/screens/features/dark-mode.png" width="700" height="1521" loading="lazy" alt="Slouchpad's Appearance settings in dark mode: a dark mode switch, a brightness slider and a rainbow colour slider."></div>
+    <div class="feature-shot"><video src="/assets/screens/features/dark-mode.mp4" poster="/assets/screens/features/dark-mode.png" width="592" height="1280" autoplay muted loop playsinline preload="metadata" aria-label="Turning on dark mode in Appearance settings, then dragging the brightness and colour sliders to change the app's colour."></video></div>
   </div>
 </div>
 </section>
@@ -121,14 +138,13 @@
       </div></li>
     <li><div class="step-text"><h3>Connect</h3><p>Open the Slouchpad menu to see your PIN, then enter it in the iPhone app and choose your Mac.</p></div>
       <div class="step-shots">
-        <img src="/assets/screens/connection/connection-automatic.png" width="700" height="1515" loading="lazy" alt="The iPhone app's Connection settings, on Automatic: your Mac is listed and the PIN is entered, ready to connect.">
-        <img src="/assets/screens/instructions/3-2-connect.png" width="700" height="1425" loading="lazy" alt="The same screen once connected: the Mac is ticked and a Disconnect button appears.">
+        <video src="/assets/screens/connection/connection-automatic.mp4" poster="/assets/screens/connection/connection-automatic.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="Connecting on Automatic: tap the PIN field, enter the PIN, choose your Mac, and the app shows it connected with a Disconnect button."></video>
       </div></li>
   </ol>
   <div class="extra">
     <div class="step-text"><h3>If your iPhone can't find your Mac</h3><p>Some guest and hotel Wi-Fi networks stop devices finding each other. In the iPhone app, choose <strong>Manual</strong> under Connection, type the address shown in the Slouchpad menu on your Mac, then enter the PIN and connect.</p></div>
     <div class="step-shots">
-      <img src="/assets/screens/connection/connection-manual.png" width="700" height="1515" loading="lazy" alt="The Connection settings on Manual: a field for the Mac's address, then the PIN field and the Connect button.">
+      <video src="/assets/screens/connection/connection-manual.mp4" poster="/assets/screens/connection/connection-manual.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="Connecting on Manual: the Mac's address is filled in, then enter the PIN, connect, and the app shows it connected."></video>
     </div>
   </div>
   <p class="fine">Your iPhone and Mac need to be on the same Wi-Fi network. Brightness works on the screens macOS lets apps control, such as the built-in display and Apple displays. Many other monitors can only be adjusted with their own buttons.</p>
@@ -146,15 +162,17 @@
     <summary>My iPhone can't find my Mac</summary>
     <ul>
       <li>Check that both are on the <strong>same Wi-Fi network</strong>. Guest networks, some office networks and some hotel or student Wi-Fi stop devices seeing each other.</li>
+      <li>If your iPhone still can't see the Mac, <strong>connect by address</strong>: in the iPhone app open Settings &rarr; Connection, choose <em>Manual</em>, type the address shown in the Slouchpad menu on your Mac, enter the PIN and tap Connect.</li>
       <li>Check the Slouchpad sofa icon is in your Mac's menu bar. If not, open Slouchpad from Applications.</li>
       <li>On your iPhone, open Settings &rarr; Privacy &amp; Security &rarr; Local Network and make sure Slouchpad is on.</li>
       <li>If you use a VPN on either device, try turning it off.</li>
       <li>If your Mac's firewall is on, allow incoming connections for Slouchpad in System Settings &rarr; Network &rarr; Firewall.</li>
+      <li>When nothing is found the app says so after a few seconds and offers <em>Try again</em>. If it says Local Network access is off, tap the link to open Settings and switch it on.</li>
     </ul>
   </details>
   <details>
     <summary>Where do I find the PIN?</summary>
-    <p>Click the Slouchpad icon in your Mac's menu bar. The PIN is shown at the top. Enter it in the iPhone app and choose your Mac from the list.</p>
+    <p>Click the Slouchpad icon in your Mac's menu bar. The PIN is shown at the top, with your Mac's address below it. Enter the PIN in the iPhone app and choose your Mac from the list (or, on Manual, type the address).</p>
   </details>
   <details>
     <summary>It says "Too many wrong PINs"</summary>
@@ -162,7 +180,12 @@
   </details>
   <details>
     <summary>It worked yesterday and now it won't connect</summary>
-    <p>Your Mac's PIN may have changed, or the Mac may be asleep or on a different network. Check the PIN in the Slouchpad menu, then open Settings in the iPhone app and enter it again.</p>
+    <p>Your Mac's PIN may have changed, or the Mac may be asleep or on a different network. Check the PIN in the Slouchpad menu, then open Settings in the iPhone app and enter it again. If you connect by address, your router may have given the Mac a new address: copy it again from the Slouchpad menu.</p>
+  </details>
+
+  <details>
+    <summary>What do I need to use Slouchpad?</summary>
+    <p>An iPhone with iOS 16 or later, and a Mac with macOS 13 or later running the free Slouchpad Mac app. Both need to be on the same Wi-Fi network.</p>
   </details>
 
   <h3 class="etched sub">Using it</h3>
@@ -172,7 +195,7 @@
   </details>
   <details>
     <summary>How do I type on my Mac?</summary>
-    <p>Tap the keyboard icon in the bar along the bottom of the app. Whatever you type appears on your Mac as you type, in the app that's in front, so click the search box or text field on your Mac first (with the trackpad). Drag along the space bar to move the cursor; the Mac's cursor follows. The Return key presses Return on the Mac, for example to submit a search.</p>
+    <p>Tap the keyboard icon in the bar along the bottom of the app. Whatever you type appears on your Mac as you type, in the app that's in front, so click the search box or text field on your Mac first (with the trackpad). Drag along the space bar to move the cursor; the Mac's cursor follows. The four arrow keys above the keyboard also move the cursor, including into text that was already there, and Backspace deletes it. The Return key presses Return on the Mac, for example to submit a search.</p>
   </details>
   <details>
     <summary>The text I type shows large on my Mac. Can I turn that off?</summary>
@@ -200,7 +223,7 @@
   </details>
   <details>
     <summary>How does the fullscreen switch work?</summary>
-    <p>In the Apple TV app it sends <kbd>fn</kbd> + <kbd>F</kbd>, the Mac's fullscreen shortcut. In a browser it presses <kbd>F</kbd> to make the video fullscreen and <kbd>Esc</kbd> to leave it, which is what video players on streaming sites listen for. The switch follows the window's real state, including when you change it on the Mac.</p>
+    <p>In the Apple TV, Photos and QuickTime Player apps it sends <kbd>fn</kbd> + <kbd>F</kbd>, the Mac's fullscreen shortcut. In a browser it presses <kbd>F</kbd> to make the video fullscreen and <kbd>Esc</kbd> to leave it, which is what video players on streaming sites listen for. The switch follows the window's real state, including when you change it on the Mac.</p>
   </details>
   <details>
     <summary>Does it work away from home?</summary>
@@ -209,6 +232,31 @@
   <details>
     <summary>Can I try it without a Mac?</summary>
     <p>Yes. On the iPhone app's settings page (Connection tab), choose <em>Try without a Mac</em>. Every control works on sample data and nothing is sent anywhere.</p>
+  </details>
+
+  <details>
+    <summary>What does the Apps screen do?</summary>
+    <p>It shows the apps in your Mac's Dock, in the Dock's own order, with closed ones dimmed, followed by your other open apps. Tap an app to bring it to the front, or to open it if it is closed. Tap the app that is already in front to step through its windows. Hold an app to quit it, or to send its window to another screen when your Mac has more than one.</p>
+  </details>
+  <details>
+    <summary>The Apps screen says to update Slouchpad on my Mac</summary>
+    <p>Your Mac is running an older version of Slouchpad that can't list its apps. Download the latest Mac app from <a href="#home">the top of this page</a>, open it and the Apps screen will fill in.</p>
+  </details>
+  <details>
+    <summary>A window won't move to my other screen</summary>
+    <p>Moving a window needs the Accessibility permission (see above) and a Mac with more than one screen that isn't mirroring them. Some apps limit where their windows can go, and Slouchpad can't move those.</p>
+  </details>
+  <details>
+    <summary>How do I use the Magnifier?</summary>
+    <p>In the iPhone app go to Settings &rarr; Controls and switch on <em>Magnifier on Mac</em>. While the trackpad or the typing screen is showing, your Mac's Zoom follows the pointer. It needs <em>Use keyboard shortcuts to zoom</em> switched on in System Settings &rarr; Accessibility &rarr; Zoom on your Mac.</p>
+  </details>
+  <details>
+    <summary>What are crash reports?</summary>
+    <p>An optional switch, off until you turn it on, that sends us an anonymous report when Slouchpad crashes or freezes. It sends nothing about what you do or type. It is in Settings &rarr; Controls on the iPhone and in the Slouchpad menu on the Mac. See the <a href="#privacy">privacy policy</a> for what a report contains.</p>
+  </details>
+  <details>
+    <summary>Can Slouchpad start when I log in to my Mac?</summary>
+    <p>Yes. Switch on <em>Open at login</em> in the Slouchpad menu on your Mac. macOS may ask you to confirm it in System Settings.</p>
   </details>
 
   <h3 class="etched sub">Removing Slouchpad</h3>
@@ -223,7 +271,7 @@
   </details>
 
   <h3 class="etched sub">Still stuck?</h3>
-  <p>Write to <a href="mailto:support@slouchpad.com">support@slouchpad.com</a> and tell us your macOS and iOS versions and what you see.</p>
+  <p>Write to <a href="mailto:support@slouchpad.com">support@slouchpad.com</a> and tell us your macOS and iOS versions, the version of the Mac and iPhone apps if you know them, and what you see.</p>
 </section>
 <hr class="rule">
 
@@ -294,6 +342,12 @@
   }, { rootMargin: '-35% 0px -60% 0px' });
   ids.forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
 })();
+</script>
+<script>
+// Visitors who ask for less motion get the still poster instead of the looping clip.
+if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  document.querySelectorAll("video[autoplay]").forEach(function (v) { v.removeAttribute("autoplay"); v.pause(); });
+}
 </script>
 </body>
 </html>
