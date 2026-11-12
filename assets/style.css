@@ -206,7 +206,7 @@ section { padding-top: 56px; padding-bottom: 56px; }
 .step-shots { display: grid; gap: 14px; grid-template-columns: 1fr; align-items: center; }
 .step-shots img { display: block; width: 100%; height: auto; border-radius: 18px; box-shadow: 0 10px 24px -10px var(--shadow), 0 2px 5px var(--shadow); }
 /* Phone screenshots are tall; keep them narrow. */
-.step-shots img[height="1425"] { max-width: 260px; justify-self: center; }
+.step-shots img[height="1425"], .step-shots img[height="1515"] { max-width: 260px; justify-self: center; }
 /* The setup guide lays each step out as a row: its words, then its screenshots. */
 .page.guide { max-width: 980px; }
 .guide .steps { grid-template-columns: 1fr; gap: 44px; padding: 0; }
@@ -231,6 +231,17 @@ section { padding-top: 56px; padding-bottom: 56px; }
 @media (min-width: 760px) {
   .feature { display: grid; grid-template-columns: 1fr 260px; gap: 32px; align-items: start; }
 }
+
+/* A feature with two phone shots side by side, and a Mac settings strip under its words. */
+.feature-shot.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-width: 534px; }
+.feature-shot.pair img { max-width: none; }
+.feature-text .inline-shot { display: block; width: 100%; max-width: 400px; height: auto; margin-top: 18px; border-radius: 12px; box-shadow: 0 10px 24px -10px var(--shadow), 0 2px 5px var(--shadow); }
+@media (min-width: 760px) { .feature.wide { grid-template-columns: 1fr 534px; } }
+/* The manual connection note after the setup steps, laid out like a step without a number. */
+.guide .extra { margin-top: 44px; padding-top: 44px; position: relative; display: grid; gap: 20px; }
+.guide .extra::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(var(--rule-dark) 1px, var(--rule-light) 1px); }
+.guide .extra p { color: var(--ink-soft); font-size: 16px; }
+@media (min-width: 760px) { .guide .extra { grid-template-columns: minmax(200px, 1fr) 2fr; gap: 32px; align-items: center; } }
 
 /* Text pages (support, privacy) */
 .page { padding-top: 48px; padding-bottom: 72px; max-width: 760px; margin: 0 auto; }
