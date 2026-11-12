@@ -210,6 +210,8 @@ section { padding-top: 56px; padding-bottom: 56px; }
 .step-shots video { display: block; width: 100%; max-width: 260px; height: auto; justify-self: center; border-radius: 18px; box-shadow: 0 10px 24px -10px var(--shadow), 0 2px 5px var(--shadow); }
 /* On wide screens the clips sit at the right-hand edge of their row; on a phone they stay centred. */
 @media (min-width: 760px) { .step-shots video { grid-column: 1 / -1; justify-self: end; } }
+/* A step with a picture and a clip puts them side by side. */
+@media (min-width: 760px) { .step-shots.with-clip video { grid-column: auto; justify-self: center; } }
 /* The setup guide lays each step out as a row: its words, then its screenshots. */
 .page.guide { max-width: 980px; }
 .guide .steps { grid-template-columns: 1fr; gap: 44px; padding: 0; }
