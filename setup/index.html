@@ -3,13 +3,74 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Slouchpad Setup</title>
-<meta name="robots" content="noindex">
-<link rel="canonical" href="https://slouchpad.com/">
-<meta http-equiv="refresh" content="0; url=/#setup">
-<script>location.replace("/" + (location.hash || "#setup"));</script>
+<title>Set up Slouchpad on your Mac</title>
+<meta name="description" content="Install the free Slouchpad app on your Mac, allow it to control the pointer and keys, and connect your iPhone.">
+<link rel="canonical" href="https://slouchpad.com/setup/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Slouchpad">
+<meta property="og:title" content="Set up Slouchpad on your Mac">
+<meta property="og:description" content="Install the free Slouchpad app on your Mac, allow it to control the pointer and keys, and connect your iPhone.">
+<meta property="og:url" content="https://slouchpad.com/setup/">
+<meta property="og:image" content="https://slouchpad.com/assets/icon-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f5f4f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#313134" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<p>This page has moved to <a href="/#setup">slouchpad.com</a>.</p>
+<div class="pad">
+<header class="site-header inner"><nav aria-label="Main"><a href="/">Home</a><a href="/#features">Features</a><a href="/#settings">Settings</a><a href="/setup/" aria-current="true">Setup</a><a href="/#support">Support</a><a href="/#privacy">Privacy</a></nav></header>
+<main>
+<section class="inner page guide" id="setup">
+  <h1 class="etched title">Set up Slouchpad</h1>
+  <p class="lead" style="margin-left:0">Slouchpad needs a free companion app on your Mac. Three steps: put it on your Mac, let it control the pointer and keys, then connect your iPhone.</p>
+  <div class="actions" style="justify-content:flex-start;margin-top:0">
+    <a class="button" href="https://github.com/addywaddy/slouchpad-site/releases/latest/download/Slouchpad.dmg">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>
+      <span class="button-label"><small>Download the</small><strong>Mac App</strong></span>
+    </a>
+  </div>
+  <p class="fine">Open this page on your Mac. macOS 13 or later. Don't have the iPhone app yet? Get it from the <a href="https://apps.apple.com/us/app/slouchpad-mac-remote-control/id6828899828">App Store</a>.</p>
+  <ol class="steps">
+    <li><div class="step-text"><h3>Install the Mac App</h3><p><a href="https://github.com/addywaddy/slouchpad-site/releases/latest/download/Slouchpad.dmg">Download</a> the Mac App, drag it to Applications and open it. It lives in your menu bar behind a couch icon.</p></div>
+      <div class="step-shots">
+        <img src="/assets/screens/instructions/mac-downloads.png" width="1100" height="735" loading="lazy" alt="The Downloads folder in Finder, holding Slouchpad.dmg.">
+        <img src="/assets/screens/instructions/mac-drag-to-applications.png" width="1100" height="853" loading="lazy" alt="The Slouchpad disk image open in Finder: drag the Slouchpad icon onto the Applications folder.">
+      </div></li>
+    <li><div class="step-text"><h3>Permit</h3><p><strong>On your Mac:</strong> Under Privacy &amp; Security, allow Slouchpad in Accessibility so it can move the pointer and press keys for your phone. The button in the menu takes you there.</p><p><strong>On your iPhone:</strong> Make sure Slouchpad has Local Network access (Settings, then Slouchpad) so it can find your Mac.</p></div>
+      <div class="step-shots">
+        <img src="/assets/screens/instructions/device-control-and-data-access.png" width="1002" height="910" loading="lazy" alt="System Settings on the Mac, Privacy &amp; Security, Device Control and Data Access: the switch next to Slouchpad is on.">
+        <img src="/assets/screens/instructions/permit-local-network.png" width="1100" height="1075" loading="lazy" alt="The iPhone's Settings for Slouchpad: the Local Network switch is on.">
+      </div></li>
+    <li><div class="step-text"><h3>Connect</h3><p>Open the Slouchpad menu to see your PIN, then enter it in the iPhone app and choose your Mac.</p></div>
+      <div class="step-shots with-clip">
+        <img src="/assets/screens/instructions/slouchpad-mac-menu.png" width="686" height="844" loading="lazy" alt="The Slouchpad menu on the Mac: the pairing PIN and the Mac's address are shown at the top.">
+        <video src="/assets/screens/connection/connection-automatic.mp4" poster="/assets/screens/connection/connection-automatic.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="Connecting on Automatic: tap the PIN field, enter the PIN, choose your Mac, and the app shows it connected with a Disconnect button."></video>
+      </div></li>
+  </ol>
+  <div class="extra">
+    <div class="step-text"><h3>If your iPhone can't find your Mac</h3><p>Some guest and hotel Wi-Fi networks stop devices finding each other. In the iPhone app, choose <strong>Manual</strong> under Connection, type the address shown in the Slouchpad menu on your Mac, then enter the PIN and connect.</p></div>
+    <div class="step-shots">
+      <video src="/assets/screens/connection/connection-manual.mp4" poster="/assets/screens/connection/connection-manual.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="Connecting on Manual: the Mac's address is filled in, then enter the PIN, connect, and the app shows it connected."></video>
+    </div>
+  </div>
+  <p class="fine">Your iPhone and Mac need to be on the same Wi-Fi network. Brightness works on the screens macOS lets apps control, such as the built-in display and Apple displays. Many other monitors can only be adjusted with their own buttons.</p>
+  <p class="fine">Something not working? See <a href="/#support">Support</a>, or write to <a href="mailto:support@slouchpad.com">support@slouchpad.com</a>.</p>
+</section>
+</main>
+<hr class="rule">
+
+<footer class="inner site-footer">
+  <span>&copy; 2026 Slouchpad</span>
+</footer>
+</div>
+<script>
+// Visitors who ask for less motion get the still poster instead of the looping clip.
+if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  document.querySelectorAll("video[autoplay]").forEach(function (v) { v.removeAttribute("autoplay"); v.pause(); });
+}
+</script>
 </body>
 </html>
