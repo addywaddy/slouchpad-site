@@ -86,13 +86,13 @@
   <p class="lead" style="margin-left:0">Everything is in three tabs: Connection, Controls and Appearance.</p>
 <div class="features">
   <div class="feature">
-    <div class="feature-text"><h3 class="etched sub">Connection</h3><p>Which Mac to control, and the PIN that lets your iPhone in.</p>
+    <div class="feature-text"><h3 class="etched sub">Connection</h3><p>Pair with your Mac by scanning its QR code.</p>
       <ul>
-        <li><strong>Automatic:</strong> your iPhone finds your Mac on the same Wi-Fi network; choose it from the list</li>
-        <li><strong>Manual:</strong> for networks where devices can't find each other, type the address shown in the Slouchpad menu on your Mac</li>
-        <li>Enter the PIN from the Slouchpad menu, then Connect. Step by step, see the <a href="/setup/">setup guide</a></li>
+        <li><strong>Scan QR Code:</strong> point your iPhone at the code in the Slouchpad menu on your Mac. It connects, and does so again by itself whenever your Mac is in reach</li>
+        <li><strong>Disconnect:</strong> forgets the Mac. Scan its code to connect again, or scan another Mac&rsquo;s code to switch</li>
+        <li>Step by step, see the <a href="/setup/">setup guide</a></li>
       </ul></div>
-    <div class="feature-shot"><video src="/assets/screens/connection/connection-automatic.mp4" poster="/assets/screens/connection/connection-automatic.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="Connecting on Automatic: tap the PIN field, enter the PIN, choose your Mac, and the app shows it connected with a Disconnect button."></video></div>
+    <div class="feature-shot"><video src="/assets/screens/connection/connection-automatic.mp4" poster="/assets/screens/connection/connection-automatic.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="Scanning the QR code in the Mac's menu with the iPhone app, which then connects to the Mac."></video></div>
   </div>
   <div class="feature">
     <div class="feature-text"><h3 class="etched sub">Controls</h3><p>How the pointer and the Mac respond.</p>
@@ -120,7 +120,7 @@
 <hr class="rule">
 <section class="inner page guide" id="setup">
   <h2 class="etched title">Setup guide</h2>
-  <p class="lead" style="margin-left:0">Slouchpad needs its free companion app on your Mac. Download it, let it control the pointer and keys, then connect your iPhone with the PIN it shows.</p>
+  <p class="lead" style="margin-left:0">Slouchpad needs its free companion app on your Mac. Download it, let it control the pointer and keys, then scan its QR code with your iPhone.</p>
   <p><a class="button" href="/setup/"><span class="button-label"><small>Step by step</small><strong>Open the setup guide</strong></span></a></p>
 </section>
 <hr class="rule">
@@ -135,25 +135,33 @@
     <summary>My iPhone can't find my Mac</summary>
     <ul>
       <li>Check that both are on the <strong>same Wi-Fi network</strong>. Guest networks, some office networks and some hotel or student Wi-Fi stop devices seeing each other.</li>
-      <li>If your iPhone still can't see the Mac, <strong>connect by address</strong>: in the iPhone app open Settings &rarr; Connection, choose <em>Manual</em>, type the address shown in the Slouchpad menu on your Mac, enter the PIN and tap Connect.</li>
+      <li>If your iPhone still can't see the Mac, <strong>bring the two close together</strong> and make sure Wi-Fi is switched on on both. Slouchpad then connects directly, without the network. The pointer can be a little less smooth that way.</li>
       <li>Check the Slouchpad sofa icon is in your Mac's menu bar. If not, open Slouchpad from Applications.</li>
       <li>On your iPhone, open Settings &rarr; Privacy &amp; Security &rarr; Local Network and make sure Slouchpad is on.</li>
       <li>If you use a VPN on either device, try turning it off.</li>
       <li>If your Mac's firewall is on, allow incoming connections for Slouchpad in System Settings &rarr; Network &rarr; Firewall.</li>
-      <li>When nothing is found the app says so after a few seconds and offers <em>Try again</em>. If it says Local Network access is off, tap the link to open Settings and switch it on.</li>
+      <li>The app says what it is waiting for, and offers <em>Try again</em> after a failure. If it says Local Network access is off, tap Open Settings and switch it on.</li>
     </ul>
   </details>
   <details>
-    <summary>Where do I find the PIN?</summary>
-    <p>Click the Slouchpad icon in your Mac's menu bar. The PIN is shown at the top, with your Mac's address below it. Enter the PIN in the iPhone app and choose your Mac from the list (or, on Manual, type the address).</p>
+    <summary>Where do I find the QR code?</summary>
+    <p>Click the Slouchpad icon in your Mac's menu bar. The QR code is shown there. In the iPhone app tap <em>Scan QR Code</em> and point the camera at it, or open the iPhone's Camera app and point it at the code. If you can't scan, choose <em>Copy link instead</em> in the menu, send the link to your iPhone in a message and open it there.</p>
   </details>
   <details>
-    <summary>It says "Too many wrong PINs"</summary>
-    <p>To stop anyone guessing your PIN, five wrong attempts in a row pause pairing for 30 seconds. Each further batch of five doubles the wait, up to an hour. After 20 wrong guesses in total, the Mac chooses a new PIN. Wait for the pause to end and enter the PIN from the Slouchpad menu. Choose <em>New PIN</em> there at any time to change it.</p>
+    <summary>It says my Mac has a new code</summary>
+    <p>The code changes when you choose <em>New code</em> in the Slouchpad menu, and the old one stops working. Scan the new one. The iPhone also asks you to scan again if you reinstalled Slouchpad on the Mac, because the Mac then has a new security certificate.</p>
   </details>
   <details>
     <summary>It worked yesterday and now it won't connect</summary>
-    <p>Your Mac's PIN may have changed, or the Mac may be asleep or on a different network. Check the PIN in the Slouchpad menu, then open Settings in the iPhone app and enter it again. If you connect by address, your router may have given the Mac a new address: copy it again from the Slouchpad menu.</p>
+    <p>The Mac may be asleep, switched off, or on a different network, or Slouchpad may not be running on it. Open the iPhone app: it says what it is waiting for, and connects by itself as soon as your Mac is in reach. If it says the Mac has a new code or a different certificate, scan the code again.</p>
+  </details>
+  <details>
+    <summary>Can I use more than one Mac?</summary>
+    <p>The iPhone is paired with one Mac at a time. To switch, scan the other Mac's code. <em>Disconnect</em> on the Connection tab forgets the Mac, and you scan its code to connect again.</p>
+  </details>
+  <details>
+    <summary>Is the connection secure?</summary>
+    <p>Yes. Everything between your iPhone and your Mac, including what you type, is encrypted. Your iPhone only connects to the Mac whose code you scanned, and only a phone that has scanned the code can connect. If anyone could see your Mac's screen they could see the code, so choose <em>New code</em> in the menu if that matters.</p>
   </details>
 
   <details>
@@ -164,7 +172,7 @@
   <h3 class="etched sub">Using it</h3>
   <details id="accessibility">
     <summary>The pointer doesn't move, or clicks and keys do nothing</summary>
-    <p>Slouchpad needs the Accessibility permission to act as a mouse and keyboard. On your Mac open System Settings &rarr; Privacy &amp; Security &rarr; Accessibility and switch Slouchpad on. The Slouchpad menu has a button that takes you there. After you allow it, the iPhone app updates within a few seconds.</p>
+    <p>Slouchpad needs the Accessibility permission to act as a mouse and keyboard. Until it has it, the iPhone app shows <em>One more step</em>. Click the Slouchpad icon in your Mac's menu bar: its button takes you to System Settings &rarr; Privacy &amp; Security &rarr; Accessibility, where you switch Slouchpad on. The iPhone app carries on by itself within a few seconds.</p>
   </details>
   <details>
     <summary>How do I type on my Mac?</summary>
@@ -250,21 +258,21 @@
 
 <section class="inner page guide" id="privacy">
   <h2 class="etched title">Privacy policy</h2>
-  <p class="meta">Last updated: 9 November 2026</p>
+  <p class="meta">Last updated: 14 November 2026</p>
   <p class="lead" style="margin-left:0">Slouchpad does not collect, share or sell any personal data. It has no accounts, no analytics, no advertising and no third-party code that tracks you. The one thing it can send us is an anonymous crash report, and only if you switch that on (see Crash reports below).</p>
 
   <h3 class="etched sub">How it works</h3>
-  <p>Slouchpad has two parts: an iPhone app and a free Mac app. They talk to each other directly over your own Wi-Fi network. Nothing you do in Slouchpad, such as pointer movements, key presses or media controls, leaves your network or passes through any server of ours.</p>
+  <p>Slouchpad has two parts: an iPhone app and a free Mac app. They talk to each other directly, over your own Wi-Fi network or a direct link between the two devices, and the connection is encrypted. Nothing you do in Slouchpad, such as pointer movements, key presses or media controls, leaves your network or passes through any server of ours.</p>
 
   <h3 class="etched sub">What stays on your devices</h3>
   <ul>
-    <li><strong>On your iPhone:</strong> the PIN you entered, the name of the Mac you last connected to, the address you typed if you connected to your Mac by its address, and your settings (dark mode, colour, brightness, pointer speed, pointer colour, whether to show the pointer trail on the Mac, whether to use the magnifier, and whether to share crash reports).</li>
-    <li><strong>On your Mac:</strong> the pairing PIN, whether the app opens at login, and whether to share crash reports.</li>
+    <li><strong>On your iPhone:</strong> the name of the Mac you paired with, its pairing key and the fingerprint of its security certificate (both from the QR code you scanned), and your settings (dark mode, colour, brightness, pointer speed, pointer colour, whether to show the pointer trail on the Mac, whether to use the magnifier, and whether to share crash reports).</li>
+    <li><strong>On your Mac:</strong> the pairing key shown in the QR code, the security certificate the Mac made for itself (in your keychain), whether the app opens at login, and whether to share crash reports.</li>
   </ul>
   <p>This information is kept only on those devices and is removed when you delete the apps.</p>
 
   <h3 class="etched sub">Typing</h3>
-  <p>When you use the typing screen, the text you type is sent straight to your Mac over your Wi-Fi network and typed into the app you are using there. Unless you switch it off in Settings, the Mac also shows the text in large type on its screen for a moment. The preview is hidden while a password field is selected. Slouchpad does not keep or send anywhere what you type.</p>
+  <p>When you use the typing screen, the text you type is sent straight to your Mac, encrypted, and typed into the app you are using there. Unless you switch it off in Settings, the Mac also shows the text in large type on its screen for a moment. The preview is hidden while a password field is selected. Slouchpad does not keep or send anywhere what you type.</p>
 
   <h3 class="etched sub">Your Mac&rsquo;s apps</h3>
   <p>The Apps screen shows the apps kept in your Mac&rsquo;s Dock and the other apps that are open. To do that, your Mac sends their names and icons to your iPhone over your Wi-Fi network, while you use the app. The iPhone keeps them in the app&rsquo;s memory only, never saves them to its storage, and does not send them anywhere else. Slouchpad does not see what is inside those apps.</p>
@@ -277,9 +285,10 @@
   <h3 class="etched sub">Permissions</h3>
   <ul>
     <li><strong>Local Network (iPhone):</strong> lets the app find and connect to your Mac on your Wi-Fi network.</li>
+    <li><strong>Camera (iPhone):</strong> used only when you tap Scan QR Code, to read the code in your Mac&rsquo;s menu. The picture is not recorded, saved or sent anywhere.</li>
     <li><strong>Accessibility (Mac):</strong> lets the Mac app move the pointer and press keys when you ask it to from your phone.</li>
   </ul>
-  <p>The Mac app does not read the contents of your screen, your keystrokes or your files. Slouchpad does not use the microphone, camera, location, contacts or photos.</p>
+  <p>The Mac app does not read the contents of your screen, your keystrokes or your files. Slouchpad does not use the microphone, location, contacts or photos, and uses the camera only to scan that code.</p>
 
   <h3 class="etched sub">This website</h3>
   <p>This website does not use cookies or analytics. It is hosted on GitHub Pages, which may keep standard server logs; see GitHub's own privacy statement.</p>

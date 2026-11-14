@@ -25,7 +25,7 @@
 <main>
 <section class="inner page guide" id="setup">
   <h1 class="etched title">Set up Slouchpad</h1>
-  <p class="lead" style="margin-left:0">Slouchpad needs a free companion app on your Mac. Three steps: put it on your Mac, let it control the pointer and keys, then connect your iPhone.</p>
+  <p class="lead" style="margin-left:0">Slouchpad needs a free companion app on your Mac. Three steps: put it on your Mac, let it control the pointer and keys, then scan its QR code with your iPhone.</p>
   <div class="actions" style="justify-content:flex-start;margin-top:0">
     <a class="button" href="https://github.com/addywaddy/slouchpad-site/releases/latest/download/Slouchpad.dmg">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>
@@ -39,24 +39,21 @@
         <img src="/assets/screens/instructions/mac-downloads.png" width="1100" height="735" loading="lazy" alt="The Downloads folder in Finder, holding Slouchpad.dmg.">
         <img src="/assets/screens/instructions/mac-drag-to-applications.png" width="1100" height="853" loading="lazy" alt="The Slouchpad disk image open in Finder: drag the Slouchpad icon onto the Applications folder.">
       </div></li>
-    <li><div class="step-text"><h3>Permit</h3><p><strong>On your Mac:</strong> Under Privacy &amp; Security, allow Slouchpad in Accessibility so it can move the pointer and press keys for your phone. The button in the menu takes you there.</p><p><strong>On your iPhone:</strong> Make sure Slouchpad has Local Network access (Settings, then Slouchpad) so it can find your Mac.</p></div>
+    <li><div class="step-text"><h3>Permit</h3><p><strong>On your Mac:</strong> Under Privacy &amp; Security, allow Slouchpad in Accessibility so it can move the pointer and press keys for your phone. The button in the menu takes you there.</p><p><strong>On your iPhone:</strong> When it asks to find devices on your local network, tap Allow, so it can find your Mac. If you tapped Don&rsquo;t Allow, switch Local Network on in Settings, then Slouchpad.</p></div>
       <div class="step-shots">
         <img src="/assets/screens/instructions/device-control-and-data-access.png" width="1002" height="910" loading="lazy" alt="System Settings on the Mac, Privacy &amp; Security, Device Control and Data Access: the switch next to Slouchpad is on.">
         <img src="/assets/screens/instructions/permit-local-network.png" width="1100" height="1075" loading="lazy" alt="The iPhone's Settings for Slouchpad: the Local Network switch is on.">
       </div></li>
-    <li><div class="step-text"><h3>Connect</h3><p>Open the Slouchpad menu to see your PIN, then enter it in the iPhone app and choose your Mac.</p></div>
+    <li><div class="step-text"><h3>Connect</h3><p>Click the Slouchpad icon in your Mac&rsquo;s menu bar to see its QR code. In the iPhone app, tap <strong>Scan QR Code</strong> and point the camera at it (the first time, allow camera access). Your iPhone connects, and does so again by itself whenever your Mac is in reach. You can also scan the code with the iPhone&rsquo;s Camera app. If you can&rsquo;t scan, choose <strong>Copy link instead</strong> in the menu, send the link to your iPhone in a message and open it there.</p></div>
       <div class="step-shots with-clip">
-        <img src="/assets/screens/instructions/slouchpad-mac-menu.png" width="686" height="844" loading="lazy" alt="The Slouchpad menu on the Mac: the pairing PIN and the Mac's address are shown at the top.">
-        <video src="/assets/screens/connection/connection-automatic.mp4" poster="/assets/screens/connection/connection-automatic.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="Connecting on Automatic: tap the PIN field, enter the PIN, choose your Mac, and the app shows it connected with a Disconnect button."></video>
+        <img src="/assets/screens/instructions/slouchpad-mac-menu.png" width="686" height="844" loading="lazy" alt="The Slouchpad menu on the Mac, with the QR code that pairs your iPhone.">
+        <video src="/assets/screens/connection/connection-automatic.mp4" poster="/assets/screens/connection/connection-automatic.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="Scanning the QR code in the Mac's menu with the iPhone app, which then connects to the Mac."></video>
       </div></li>
   </ol>
   <div class="extra">
-    <div class="step-text"><h3>If your iPhone can't find your Mac</h3><p>Some guest and hotel Wi-Fi networks stop devices finding each other. In the iPhone app, choose <strong>Manual</strong> under Connection, type the address shown in the Slouchpad menu on your Mac, then enter the PIN and connect.</p></div>
-    <div class="step-shots">
-      <video src="/assets/screens/connection/connection-manual.mp4" poster="/assets/screens/connection/connection-manual.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="Connecting on Manual: the Mac's address is filled in, then enter the PIN, connect, and the app shows it connected."></video>
-    </div>
+    <div class="step-text"><h3>If your iPhone can&rsquo;t find your Mac</h3><p>Some guest, hotel and coworking Wi-Fi networks stop devices finding each other. Slouchpad then connects directly between the iPhone and the Mac, which works when they are close together and Wi-Fi is switched on on both (they don&rsquo;t need to be on the same network). The pointer can be a little less smooth that way. If it still can&rsquo;t connect, check that Slouchpad is running on the Mac (look for its icon in the menu bar), that your iPhone has Local Network access, and that no VPN or firewall is in the way.</p></div>
   </div>
-  <p class="fine">Your iPhone and Mac need to be on the same Wi-Fi network. Brightness works on the screens macOS lets apps control, such as the built-in display and Apple displays. Many other monitors can only be adjusted with their own buttons.</p>
+  <p class="fine">Your iPhone and Mac are best on the same Wi-Fi network. Brightness works on the screens macOS lets apps control, such as the built-in display and Apple displays. Many other monitors can only be adjusted with their own buttons.</p>
   <p class="fine">Something not working? See <a href="/#support">Support</a>, or write to <a href="mailto:support@slouchpad.com">support@slouchpad.com</a>.</p>
 </section>
 </main>
