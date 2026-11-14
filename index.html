@@ -89,8 +89,8 @@
   <div class="feature">
     <div class="feature-text"><h3 class="etched sub">Connection</h3><p>Pair with your Mac by scanning its QR code.</p>
       <ul>
-        <li><strong>Scan QR Code:</strong> point your iPhone at the code in the Slouchpad menu on your Mac. It connects, and does so again by itself whenever your Mac is in reach</li>
-        <li><strong>Disconnect:</strong> forgets the Mac. Scan its code to connect again, or scan another Mac&rsquo;s code to switch</li>
+        <li><strong>Scan QR Code:</strong> point your iPhone at the code in the Slouchpad menu on your Mac. It connects, and does so again by itself while the app is open. Closing the app forgets your Mac</li>
+        <li><strong>Disconnect:</strong> forgets the Mac, as closing the app does. Scan its code to connect again, or scan another Mac&rsquo;s code to switch</li>
         <li>Step by step, see the <a href="/setup/">setup guide</a></li>
       </ul></div>
     <div class="feature-shot"><video src="/assets/screens/connection/connection-automatic.mp4" poster="/assets/screens/connection/connection-automatic.png" width="444" height="960" autoplay muted loop playsinline preload="metadata" aria-label="Scanning the QR code in the Mac's menu with the iPhone app, which then connects to the Mac."></video></div>
@@ -154,7 +154,7 @@
   </details>
   <details>
     <summary>It worked yesterday and now it won't connect</summary>
-    <p>The Mac may be asleep, switched off, or on a different network, or Slouchpad may not be running on it. Open the iPhone app: it says what it is waiting for, and connects by itself as soon as your Mac is in reach. If it says the Mac has a new code or a different certificate, scan the code again.</p>
+    <p>The Mac may be asleep, switched off, or on a different network, or Slouchpad may not be running on it. Open the iPhone app: it says what it is waiting for, and connects by itself as soon as your Mac is in reach. If you closed the app, it has forgotten your Mac, so scan the code again. If it says the Mac has a new code or a different certificate, scan the code again.</p>
   </details>
   <details>
     <summary>Can I use more than one Mac?</summary>
@@ -283,7 +283,7 @@
 
   <h3 class="etched sub">What stays on your devices</h3>
   <ul>
-    <li><strong>On your iPhone:</strong> the name of the Mac you paired with, its pairing key and the fingerprint of its security certificate (both from the QR code you scanned), and your settings (dark mode, colour, brightness, pointer speed, pointer colour, whether to show the pointer trail on the Mac, whether to use the magnifier, and whether to share crash reports).</li>
+    <li><strong>On your iPhone:</strong> nothing about your Mac is saved. The name of the Mac you paired with, its pairing key and the fingerprint of its security certificate (all from the QR code you scanned) are kept in the app&rsquo;s memory only, and are gone when you close the app. Your settings (dark mode, colour, brightness, pointer speed, pointer colour, whether to show the pointer trail on the Mac, whether to use the magnifier, and whether to share crash reports).</li>
     <li><strong>On your Mac:</strong> the pairing key shown in the QR code, the security certificate the Mac made for itself (in your keychain), your Favourites list (the apps and websites you chose, with the icons of the websites), whether the app opens at login, and whether to share crash reports.</li>
   </ul>
   <p>This information is kept only on those devices and is removed when you delete the apps.</p>
