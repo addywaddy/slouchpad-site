@@ -225,6 +225,18 @@ section { padding-top: 56px; padding-bottom: 56px; }
   .step-shots { grid-template-columns: 1fr 1fr; }
 }
 
+/* A guide without pictures: each step is one column of words, with its actions as a numbered list. */
+.guide .steps.text-only li { display: block; }
+.guide .steps.text-only .step-text { max-width: 680px; }
+.guide .steps .substeps { list-style: decimal; display: block; margin: 12px 0 0; padding: 0 0 0 24px; }
+.guide .steps .substeps li { display: list-item; counter-increment: none; margin: 0; padding: 0 0 8px 4px; position: static; color: var(--ink-soft); font-size: 16px; }
+.guide .steps .substeps li + li { padding-top: 0; }
+.guide .steps .substeps li + li::before { content: none; }
+.guide .steps .substeps strong { color: var(--ink); }
+
+/* The Mac menu bar's couch icon, inline in a sentence; it takes the text's colour. */
+.menubar-icon { display: inline-block; height: 1em; width: auto; vertical-align: -0.15em; }
+
 /* Features: each one is its words, then a phone screenshot. */
 .feature { padding: 36px 0; }
 .feature:first-child { padding-top: 12px; }
