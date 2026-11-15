@@ -25,19 +25,45 @@
 <main>
 <section class="inner page guide" id="setup">
   <h1 class="etched title">Set up Slouchpad</h1>
-  <p class="lead" style="margin-left:0">Slouchpad needs its free companion app, Slouchpad for Mac, on your Mac. Three steps: put it on your Mac, let it control the pointer and keys, then scan its QR code with your iPhone.</p>
-  <div class="actions" style="justify-content:flex-start;margin-top:0">
-    <a class="button" href="https://github.com/addywaddy/slouchpad-site/releases/latest/download/Slouchpad.dmg">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>
-      <span class="button-label"><small>Download</small><strong>Slouchpad for Mac</strong></span>
-    </a>
-  </div>
+  <p class="lead" style="margin-left:0">Slouchpad needs its free companion app, Slouchpad for Mac, on your Mac. Four steps: put the app on your iPhone and Slouchpad for Mac on your Mac, let it control the pointer and keys, then scan its QR code with your iPhone.</p>
   <p class="fine">Using Slouchpad 1.1 or earlier, with a PIN? See the <a href="/setup/1.1/">1.1 guide</a>.</p>
-  <p class="fine">Open this page on your Mac. macOS 13 or later. Don't have the iPhone app yet? Get it from the <a href="https://apps.apple.com/us/app/slouchpad-mac-remote-control/id6828899828">App Store</a>.</p>
-  <ol class="steps">
-    <li><div class="step-text"><h3>Install Slouchpad for Mac</h3><p><a href="https://github.com/addywaddy/slouchpad-site/releases/latest/download/Slouchpad.dmg">Download</a> Slouchpad for Mac. Open <strong>Slouchpad.dmg</strong> from your Downloads folder, drag the Slouchpad icon onto the <strong>Applications</strong> folder in the window that opens, then open Slouchpad from Applications. If you open it from somewhere else, it offers to move itself to Applications. It has no window of its own: it lives in your menu bar, behind a couch icon.</p></div></li>
-    <li><div class="step-text"><h3>Permit</h3><p><strong>On your Mac:</strong> Slouchpad needs the Accessibility permission to move the pointer and press keys for your phone. Click the couch icon in the menu bar: if a <strong>One more step</strong> card is showing, click its button to open System Settings. Under <strong>Privacy &amp; Security</strong>, then <strong>Accessibility</strong>, switch Slouchpad on. (On the newest macOS this page may be called Device Control and Data Access.) The card goes away by itself once it is done.</p><p><strong>On your iPhone:</strong> When Slouchpad asks to find devices on your local network, tap <strong>Allow</strong>, so it can reach your Mac. If you tapped Don&rsquo;t Allow, open the iPhone&rsquo;s Settings, choose Slouchpad and switch <strong>Local Network</strong> on.</p></div></li>
-    <li><div class="step-text"><h3>Connect</h3><p>Click the couch icon in your Mac&rsquo;s menu bar. The menu shows a QR code under <strong>Pair your iPhone</strong>. On your iPhone, open Slouchpad, tap <strong>Scan QR Code</strong> and point the camera at the code (the first time, allow camera access). The menu on your Mac then says <strong>Connected</strong>, and the iPhone shows its controls.</p><p>You can also scan the code with the iPhone&rsquo;s Camera app. If you can&rsquo;t scan, click <strong>Copy link instead</strong> in the Mac&rsquo;s menu, send the link to your iPhone in a message and open it there.</p><p>While the app is open, your iPhone reconnects to your Mac by itself. When you close the app it forgets your Mac, so you scan the code again next time. If you scan a new code, for example after reinstalling Slouchpad for Mac, it replaces the old pairing.</p></div></li>
+  <p class="fine">Open this page on your Mac. macOS 13 or later.</p>
+  <ol class="steps text-only">
+    <li><div class="step-text"><h3>Install Slouchpad on your iPhone</h3>
+      <p>On your iPhone, open the App Store and search for <strong>Slouchpad</strong>, or open this link on your iPhone. If you came here from the link in the app, you already have it: go on to step 2.</p>
+      <p><a class="app-store" href="https://apps.apple.com/us/app/slouchpad-mac-remote-control/id6828899828"><img src="/assets/app-store-badge.svg" width="156" height="52" alt="Download on the App Store"></a></p></div></li>
+    <li><div class="step-text"><h3>Install Slouchpad for Mac</h3>
+      <p>Slouchpad for Mac, the companion application to Slouchpad for iPhone, lives in the menu bar at the top of your screen, behind a couch icon <svg class="menubar-icon" viewBox="0 0 40 34" role="img" aria-label="the couch icon" fill="currentColor"><rect x="8" y="1" width="24" height="16" rx="5"/><rect x="2" y="18" width="36" height="10" rx="4.5"/><rect x="7" y="30" width="26" height="3" rx="1"/></svg>.</p>
+      <div class="actions" style="justify-content:flex-start;margin-top:12px">
+        <a class="button" href="https://github.com/addywaddy/slouchpad-site/releases/latest/download/Slouchpad.dmg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>
+          <span class="button-label"><small>Download</small><strong>Slouchpad for Mac</strong></span>
+        </a>
+      </div>
+      <ol class="substeps">
+        <li>Open the <strong>Downloads</strong> folder in Finder.</li>
+        <li>Double-click the file <strong>Slouchpad.dmg</strong>.</li>
+        <li>Drag the Slouchpad icon onto the <strong>Applications</strong> folder next to it.</li>
+        <li>Open the <strong>Applications</strong> folder in Finder and double-click <strong>Slouchpad</strong>. If macOS asks whether you are sure you want to open an app downloaded from the internet, click <strong>Open</strong>. (If you open Slouchpad from anywhere else, it offers to move itself to Applications. Say yes.)</li>
+        <li>Optional: eject the disk image by clicking the eject button next to Slouchpad in the Finder sidebar.</li>
+      </ol></div></li>
+    <li><div class="step-text"><h3>Allow Slouchpad to move the pointer and press keys</h3>
+      <p>Slouchpad needs the Accessibility permission to move the pointer and press keys on your Mac for your iPhone.</p>
+      <ol class="substeps">
+        <li>Look for the couch icon <svg class="menubar-icon" viewBox="0 0 40 34" role="img" aria-label="the couch icon" fill="currentColor"><rect x="8" y="1" width="24" height="16" rx="5"/><rect x="2" y="18" width="36" height="10" rx="4.5"/><rect x="7" y="30" width="26" height="3" rx="1"/></svg> in the menu bar, at the top right of your screen, and click it to open Slouchpad&rsquo;s menu.</li>
+        <li>Click the <strong>Open System Settings</strong> button, in the <strong>One more step</strong> card.</li>
+        <li>Turn on the switch next to <strong>Slouchpad</strong>. macOS may ask for your password or Touch ID.</li>
+      </ol>
+      <p>The card disappears from the menu by itself when it is done. If you can&rsquo;t see it, open System Settings yourself and go to <strong>Privacy &amp; Security</strong>, then <strong>Accessibility</strong>. On the newest macOS this page may be called Device Control and Data Access.</p></div></li>
+    <li><div class="step-text"><h3>Connect</h3>
+      <ol class="substeps">
+        <li>Open Slouchpad on your iPhone. When it asks to find devices on your local network, tap <strong>Allow</strong>.</li>
+        <li>Tap <strong>Scan QR Code</strong>. The first time, tap <strong>OK</strong> to let Slouchpad use the camera, which it only uses to read the code.</li>
+        <li>Hold your iPhone up so that it can see the QR code in Slouchpad&rsquo;s menu on your Mac. Click the couch icon <svg class="menubar-icon" viewBox="0 0 40 34" role="img" aria-label="the couch icon" fill="currentColor"><rect x="8" y="1" width="24" height="16" rx="5"/><rect x="2" y="18" width="36" height="10" rx="4.5"/><rect x="7" y="30" width="26" height="3" rx="1"/></svg> if the menu isn&rsquo;t open.</li>
+        <li>You are connected when the menu on your Mac shows a green dot and <strong>Connected: iPhone</strong>, and your iPhone shows its remote controls.</li>
+      </ol>
+      <p>You can also scan the code with the iPhone&rsquo;s Camera app. If you can&rsquo;t scan, click <strong>Copy link instead</strong> in the Mac&rsquo;s menu, send the link to your iPhone in a message and open it there.</p>
+      <p>While the app is open, your iPhone reconnects to your Mac by itself. When you close the app it forgets your Mac, so you scan the code again next time. If you tapped Don&rsquo;t Allow for the local network or the camera, open the iPhone&rsquo;s Settings, choose Slouchpad and switch them on.</p></div></li>
   </ol>
   <p class="fine">Your iPhone and Mac work best on the same Wi-Fi network. If the Slouchpad menu on your Mac says <strong>Over the direct Wi-Fi link</strong>, the pointer may be less smooth; join both devices to the same network. Brightness works on the screens macOS lets apps control, such as the built-in display and Apple displays. Many other monitors can only be adjusted with their own buttons.</p>
   <p class="fine">Can&rsquo;t find your Mac, or something else not working? See <a href="/#support">Support</a>, or write to <a href="mailto:support@slouchpad.com">support@slouchpad.com</a>.</p>
